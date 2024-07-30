@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import axios from "axios";
 import "./Donate.css";
+
+const API_URL = process.env.REACT_APP_API_URL;
 
 const Joinus = () => {
   const initialFormData = {
@@ -19,10 +20,16 @@ const Joinus = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios
-      .post("http://localhost:5000/api/joinus", formData)
-      .then((response) => {
-        console.log(response.data);
+    fetch(`${API_URL}/api/joinus`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
         alert("Application submitted successfully!");
         setFormData(initialFormData); // Reset form fields
       })
