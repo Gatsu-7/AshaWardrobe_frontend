@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div>
       <section className="hero-section">
-        <h1>Welcome to Clothes Daan</h1>
+        <h1>Welcome to AshaWardrobe</h1>
         <p>
           Make a difference by donating your clothes and helping those in need.
         </p>

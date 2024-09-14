@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <h1 onClick={handleTitleClick}>Clothes Daan</h1>
+      <h1 onClick={handleTitleClick}>AshaWardrobe</h1>
       <nav>
         <ul>
           <li>
