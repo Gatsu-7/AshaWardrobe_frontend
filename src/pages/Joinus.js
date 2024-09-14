@@ -20,7 +20,7 @@ const Joinus = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch(`${API_URL}/api/joinus`, {
+    fetch(`${API_URL}api/joinus`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -95,6 +95,7 @@ import React, { useState } from "react";
 import "./Donate.css";
 
 const API_URL = process.env.REACT_APP_API_URL;
+// console.log(API_URL);
 
 const Donate = () => {
   const [formData, setFormData] = useState({
@@ -110,14 +111,21 @@ const Donate = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch(`${API_URL}api/createuser`, {
+
+    fetch(`${process.env.REACT_APP_API_URL}api/createuser`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(formData),
     })
-      .then((response) => response.json())
+      .then((response) => {
+        if (!response.ok) {
+          // If the response is not successful, throw an error
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json(); // Parse the JSON response
+      })
       .then((data) => {
         console.log(data);
         alert("Donation submitted successfully!");
@@ -129,8 +137,8 @@ const Donate = () => {
         });
       })
       .catch((error) => {
-        console.error(error);
-        alert("Failed to submit donation");
+        console.error("Error during submission:", error);
+        alert("Failed to submit donation. Please try again later.");
       });
   };
 
