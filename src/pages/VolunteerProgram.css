@@ -5,13 +5,13 @@
 }
 
 .volunteer-title {
-  font-size: 32px;
+  font-size: 4em;
   margin-bottom: 20px;
-  color: #333;
+  color: #007bff;
 }
 
 .volunteer-description {
-  font-size: 18px;
+  font-size: 20px;
   color: #555;
   margin-bottom: 30px;
   max-width: 800px;
@@ -24,8 +24,9 @@
 }
 
 .benefits-title {
-  font-size: 24px;
+  font-size: 36px;
   color: #333;
+
   margin-bottom: 15px;
 }
 
@@ -38,7 +39,9 @@
 }
 
 .benefits-list li {
-  font-size: 16px;
+  margin-left: 10rem;
+  /* list-style: none; */
+  font-size: 18px;
   color: #555;
   margin-bottom: 10px;
 }
@@ -53,7 +56,7 @@
 }
 
 .signup-title {
-  font-size: 24px;
+  font-size: 30px;
   color: #333;
   margin-bottom: 20px;
 }
@@ -95,5 +98,14 @@
 @media (max-width: 768px) {
   .signup-form {
     width: 100%;
+  }
+  .benefits-list li {
+    margin-left: 0rem;
+  }
+  .volunteer-title {
+    font-size: 2em;
+  }
+  .benefits-title {
+    font-size: 28px;
   }
 }

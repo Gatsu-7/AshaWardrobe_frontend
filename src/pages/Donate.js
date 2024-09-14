@@ -149,8 +149,9 @@ const Donate = () => {
         Help others by donating your used clothes.
       </p>
       <form className="donate-form" onSubmit={handleSubmit}>
-        <label className="donate-label">Name:</label>
+        {/* <label className="donate-label">Name:</label> */}
         <input
+          placeholder="Full Name"
           type="text"
           name="name"
           className="donate-input"
@@ -159,28 +160,31 @@ const Donate = () => {
           required
         />
 
-        <label className="donate-label">Email:</label>
+        {/* <label className="donate-label">Email:</label> */}
         <input
           type="email"
           name="email"
+          placeholder="Email Address"
           className="donate-input"
           value={formData.email}
           onChange={handleChange}
           required
         />
 
-        <label className="donate-label">Location:</label>
+        {/* <label className="donate-label">Location:</label> */}
         <textarea
           name="location"
           className="donate-input"
+          placeholder="Location"
           value={formData.location}
           onChange={handleChange}
           required
         ></textarea>
 
-        <label className="donate-label">Items:</label>
+        {/* <label className="donate-label">Items:</label> */}
         <textarea
           name="items"
+          placeholder="Items"
           className="donate-input"
           value={formData.items}
           onChange={handleChange}

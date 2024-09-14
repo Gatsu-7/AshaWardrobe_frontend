@@ -28,6 +28,7 @@ body {
 }
 
 .hero-button {
+  margin-top: 2rem;
   background-color: #fff;
   color: #ff6f61;
   border: none;
@@ -54,6 +55,7 @@ body {
 }
 
 .feature-item {
+  object-fit: cover;
   flex: 1;
   max-width: 300px;
   margin: 10px;
@@ -128,6 +130,11 @@ body {
 
 .impact {
   margin-bottom: 2rem;
+}
+.image- {
+  margin-top: 2rem;
+  height: 200px;
+  width: 200px;
 }
 
 .testimonials {

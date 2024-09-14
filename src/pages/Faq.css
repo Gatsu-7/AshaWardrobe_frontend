@@ -1,17 +1,17 @@
 .faq-section {
   width: 100%;
-  height: auto;
-  max-width: 800px;
+  height: 170%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f7f7f7;
+  background-color: #f0f8ff;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .faq-title {
   text-align: center;
-  font-size: 28px;
+  font-size: 34px;
   margin-bottom: 20px;
   color: #333;
 }
@@ -56,6 +56,6 @@
 }
 @media screen and (max-width: 400px) {
   .faq-section {
-    height: 100vh;
+    height: 200%;
   }
 }

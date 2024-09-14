@@ -1,0 +1,110 @@
+.donation-guidelines-section {
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.donation-guidelines-title {
+  font-size: 4.5em;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.donation-guidelines-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.d-section-title {
+  font-size: 38px;
+  margin-bottom: 20px;
+  color: #007bff;
+  text-align: center;
+}
+
+.section-description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.items-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.items-list li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.ai {
+  display: flex;
+  flex-direction: row;
+}
+.ai-content {
+  margin-left: 10rem;
+  width: 50%;
+}
+.img-div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img {
+  /* position: absolute;
+  right: 18rem; */
+  height: 200px;
+  width: 200px;
+}
+.preparation-tips {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.preparation-tips li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.contact-info {
+  list-style-type: none;
+  padding: 0;
+  font-size: 16px;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .preparation-tips {
+    padding-left: 0px;
+    list-style: none;
+  }
+  .ai {
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+  .ai-content {
+    margin-left: 0;
+    width: auto;
+  }
+  .items-list {
+    list-style: none;
+    padding-left: 0;
+  }
+}

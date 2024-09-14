@@ -1,13 +1,13 @@
 .testimonials-section {
   padding: 50px 20px;
-  background-color: #f7f7f7;
+  background-color: white;
   text-align: center;
 }
 
 .testimonials-title {
-  font-size: 32px;
+  font-size: 42px;
   margin-bottom: 40px;
-  color: #333;
+  color: black;
 }
 
 .testimonials-list {
