@@ -7,6 +7,7 @@ import Donate from "./pages/Donate";
 import About from "./pages/About";
 import "./App.css";
 import Joinus from "./pages/Joinus";
+import VolunteerProgram from "./pages/Volunteer";
 const App = () => (
   <Router>
     <div className="app">
@@ -16,7 +17,8 @@ const App = () => (
           <Route path="/" element={<Home />} />
           <Route path="/donate" element={<Donate />} />
           <Route path="/about" element={<About />} />
-          <Route path="/joinus" element={<Joinus />} />
+          {/* <Route path="/joinus" element={<Joinus />} /> */}
+          <Route path="/joinus" element={<VolunteerProgram />} />
         </Routes>
       </main>
       <Footer />

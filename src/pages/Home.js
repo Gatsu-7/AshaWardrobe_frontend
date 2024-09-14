@@ -1,11 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
+import FAQ from "./Faq";
+import ImpactStatistics from "./Impact";
+import Testimonials from "./Testimonials";
+import DistributionProcess from "./Process";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
     <div>
-      {/* Hero Section */}
       <section className="hero-section">
         <h1>Welcome to Clothes Daan</h1>
         <p>
@@ -16,7 +20,6 @@ const Home = () => {
         </Link>
       </section>
 
-      {/* Features Section */}
       <section className="features-section">
         <div className="feature-item">
           <h2>Sustainable Impact</h2>
@@ -32,7 +35,10 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Call to Action Section */}
+      <section>
+        <DistributionProcess />
+      </section>
+
       <section className="call-to-action">
         <h2>Join Us Today</h2>
         <p>
@@ -41,10 +47,20 @@ const Home = () => {
         <Link to="/donate">Get Started</Link>
       </section>
 
-      {/* Footer Section */}
-      <footer className="footer">
-        <p>&copy; 2024 Clothes Daan. All rights reserved.</p>
-      </footer>
+      <section className="impact">
+        <ImpactStatistics />
+      </section>
+
+      <section className="testimonials">
+        <Testimonials />
+      </section>
+
+      <section className="faq">
+        <FAQ />
+      </section>
+      <section>
+        <Footer />
+      </section>
     </div>
   );
 };

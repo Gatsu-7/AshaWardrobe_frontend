@@ -17,13 +17,13 @@ body {
 }
 
 .hero-section h1 {
-  font-size: 3em;
+  font-size: 5em;
   margin: 0;
   line-height: 1.2;
 }
 
 .hero-section p {
-  font-size: 1.2em;
+  font-size: 2em;
   margin: 20px 0;
 }
 
@@ -32,7 +32,7 @@ body {
   color: #ff6f61;
   border: none;
   padding: 15px 30px;
-  font-size: 1em;
+  font-size: 1.5em;
   cursor: pointer;
   border-radius: 5px;
   text-decoration: none;
@@ -85,12 +85,12 @@ body {
 }
 
 .call-to-action h2 {
-  font-size: 2em;
+  font-size: 3em;
   margin-bottom: 20px;
 }
 
 .call-to-action p {
-  font-size: 1.2em;
+  font-size: 1.5em;
   margin-bottom: 20px;
 }
 
@@ -98,7 +98,7 @@ body {
   background-color: #fff;
   color: #ff6f61;
   padding: 15px 30px;
-  font-size: 1em;
+  font-size: 1.2em;
   border-radius: 5px;
   text-decoration: none;
   display: inline-block;
@@ -120,4 +120,24 @@ body {
 .footer p {
   margin: 0;
   font-size: 0.9em;
+}
+
+.faq {
+  height: 30rem;
+}
+
+.impact {
+  margin-bottom: 2rem;
+}
+
+.testimonials {
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 400px) {
+  .hero-section h1 {
+    font-size: 3em;
+  }
+  .hero-section p {
+    font-size: 1.5em;
+  }
 }
