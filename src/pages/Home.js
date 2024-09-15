@@ -13,6 +13,7 @@ import support from "../assets/support.png";
 import volunteer from "../assets/volunteer.png";
 import PartnerOrganizations from "./Partners";
 import WhyDonate from "./whydonate";
+import BlogSection from "./Blogssection";
 
 const Home = () => {
   return (
@@ -82,6 +83,9 @@ const Home = () => {
 
       <section className="testimonials">
         <Testimonials />
+      </section>
+      <section>
+        <BlogSection />
       </section>
 
       <section className="faq">

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Faq.css"; // Import the CSS file
-
+import faq from "../assets/question.png";
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
@@ -64,6 +64,18 @@ const FAQ = () => {
   return (
     <div className="faq-section">
       <h2 className="faq-title">Frequently Asked Questions</h2>
+      <img
+        src={faq}
+        alt=""
+        className="scale-img"
+        style={{
+          position: "absolute",
+          bottom: "-689%",
+          right: "50px",
+          height: "200px",
+          width: "200px",
+        }}
+      />
       <div className="faq-list">
         {faqs.map((faq, index) => (
           <div
