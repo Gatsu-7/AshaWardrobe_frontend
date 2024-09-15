@@ -1,5 +1,5 @@
 .request-assistance-section {
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 40px;
   background-color: #f8f9fa;
@@ -37,6 +37,7 @@
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 1em;
+  outline: none;
 }
 
 .form-textarea {

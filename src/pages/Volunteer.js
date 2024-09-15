@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./VolunteerProgram.css";
+import join from "../assets/join.png";
+import volun1 from "../assets/volun1.png";
 
 const API_URL = process.env.REACT_APP_API_URL;
 
@@ -58,6 +60,35 @@ const VolunteerProgram = () => {
 
       <div className="volunteer-signup">
         <h3 className="signup-title">Sign Up to Volunteer</h3>
+        <img
+          src={join}
+          alt=""
+          className="scale-img"
+          style={{
+            position: "absolute",
+            top: "47%",
+            right: "50px",
+            height: "300px",
+            width: "300px",
+            border: "5px solid black",
+
+            borderRadius: "100%",
+          }}
+        />
+        <img
+          src={volun1}
+          alt=""
+          className="scale-img"
+          style={{
+            position: "absolute",
+            top: "47%",
+            left: "100px",
+            height: "300px",
+            width: "300px",
+            borderRadius: "100%",
+            border: "5px solid black",
+          }}
+        />
         <form className="signup-form" onSubmit={handleSubmit}>
           <input
             type="text"

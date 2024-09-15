@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./RequestAssistance.css";
-
+import ask from "../assets/ask.png";
 const API_URL = process.env.REACT_APP_API_URL;
 
 const RequestAssistance = () => {
@@ -8,7 +8,7 @@ const RequestAssistance = () => {
     name: "",
     email: "",
     phone: "",
-    assistanceType: "clothing",
+    assistanceType: "",
     message: "",
   };
 
@@ -58,10 +58,11 @@ const RequestAssistance = () => {
         </div>
       ) : (
         <form className="request-form" onSubmit={handleSubmit}>
-          <label htmlFor="name" className="form-label">
+          {/* <label htmlFor="name" className="form-label">
             Full Name
-          </label>
+          </label> */}
           <input
+            placeholder="Full Name"
             type="text"
             id="name"
             name="name"
@@ -71,10 +72,11 @@ const RequestAssistance = () => {
             required
           />
 
-          <label htmlFor="email" className="form-label">
+          {/* <label htmlFor="email" className="form-label">
             Email Address
-          </label>
+          </label> */}
           <input
+            placeholder="Email Address"
             type="email"
             id="email"
             name="email"
@@ -84,10 +86,23 @@ const RequestAssistance = () => {
             required
           />
 
-          <label htmlFor="phone" className="form-label">
+          {/* <label htmlFor="phone" className="form-label">
             Phone Number
-          </label>
+          </label> */}
+          <img
+            src={ask}
+            alt=""
+            className="scale-img"
+            style={{
+              position: "absolute",
+              top: "35%",
+              right: "100px",
+              height: "300px",
+              width: "300px",
+            }}
+          />
           <input
+            placeholder="Phone Number"
             type="tel"
             id="phone"
             name="phone"
@@ -100,6 +115,7 @@ const RequestAssistance = () => {
             Type of Assistance
           </label>
           <select
+            placeholder="Type of Assistance"
             id="assistanceType"
             name="assistanceType"
             value={formData.assistanceType}
@@ -112,9 +128,9 @@ const RequestAssistance = () => {
             <option value="other">Other</option>
           </select>
 
-          <label htmlFor="message" className="form-label">
+          {/* <label htmlFor="message" className="form-label">
             Message
-          </label>
+          </label> */}
           <textarea
             id="message"
             name="message"

@@ -1,5 +1,7 @@
 import React from "react";
 import "./About.css";
+import values from "../assets/values.png";
+import values1 from "../assets/values1.png";
 
 const AboutUs = () => {
   return (
@@ -25,6 +27,31 @@ const AboutUs = () => {
 
         <section className="values-section">
           <h2 className="section-title">Our Values</h2>
+          <img
+            src={values}
+            alt=""
+            className="scale-img"
+            style={{
+              position: "absolute",
+              top: "83%",
+              left: "30px",
+              height: "300px",
+              width: "300px",
+            }}
+          />
+          <img
+            src={values1}
+            alt=""
+            className="scale-img"
+            style={{
+              position: "absolute",
+              top: "83%",
+              right: "30px",
+              height: "300px",
+              width: "300px",
+            }}
+          />
+
           <ul className="values-list">
             <li>
               <strong>Compassion:</strong> We approach our work with empathy and

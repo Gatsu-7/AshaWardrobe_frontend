@@ -93,6 +93,8 @@
 
 import React, { useState } from "react";
 import "./Donate.css";
+import donate from "../assets/donation.png";
+import ek from "../assets/ek.png";
 
 const API_URL = process.env.REACT_APP_API_URL;
 // console.log(API_URL);
@@ -151,6 +153,30 @@ const Donate = () => {
       <p className="donate-description">
         Help others by donating your used clothes.
       </p>
+      <img
+        src={donate}
+        alt=""
+        className="scale-img"
+        style={{
+          position: "absolute",
+          top: "1px",
+          right: "-100px",
+          height: "200px",
+          width: "200px",
+        }}
+      />
+      <img
+        src={ek}
+        alt=""
+        className="scale-img"
+        style={{
+          position: "absolute",
+          bottom: "1px",
+          left: "-100px",
+          height: "200px",
+          width: "200px",
+        }}
+      />
 
       {submitted ? (
         <div className="thank-you-message">

@@ -11,7 +11,7 @@ body {
 }
 
 .donate-container {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   margin-top: 2rem;
 
@@ -73,12 +73,17 @@ body {
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  /* transition: background 0.3s, transform 0.2s; */
+}
+.scale-img {
   transition: background 0.3s, transform 0.2s;
 }
-
+.scale-img:hover {
+  transform: scale(1.05);
+}
 .donate-button:hover {
   background: linear-gradient(90deg, #0056b3 0%, #004494 100%);
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
 }
 
 @media (max-width: 600px) {
@@ -92,6 +97,9 @@ body {
 
   .donate-description {
     font-size: 1.1em;
+  }
+  .scale-img {
+    display: none;
   }
 }
 
