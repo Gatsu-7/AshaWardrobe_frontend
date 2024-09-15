@@ -9,6 +9,7 @@ import "./App.css";
 import Joinus from "./pages/Joinus";
 import VolunteerProgram from "./pages/Volunteer";
 import DonationGuidelines from "./pages/Donation";
+import RequestAssistance from "./pages/Request";
 const App = () => (
   <Router>
     <div className="app">
@@ -17,6 +18,8 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/donate" element={<DonationGuidelines />} />
+          <Route path="/request" element={<RequestAssistance />} />
+
           <Route path="/about" element={<About />} />
           {/* <Route path="/joinus" element={<Joinus />} /> */}
           <Route path="/joinus" element={<VolunteerProgram />} />

@@ -98,6 +98,8 @@ const API_URL = process.env.REACT_APP_API_URL;
 // console.log(API_URL);
 
 const Donate = () => {
+  const [submitted, setSubmitted] = useState(false);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -140,6 +142,7 @@ const Donate = () => {
         console.error("Error during submission:", error);
         alert("Failed to submit donation. Please try again later.");
       });
+    setSubmitted(true);
   };
 
   return (
@@ -148,53 +151,61 @@ const Donate = () => {
       <p className="donate-description">
         Help others by donating your used clothes.
       </p>
-      <form className="donate-form" onSubmit={handleSubmit}>
-        {/* <label className="donate-label">Name:</label> */}
-        <input
-          placeholder="Full Name"
-          type="text"
-          name="name"
-          className="donate-input"
-          value={formData.name}
-          onChange={handleChange}
-          required
-        />
 
-        {/* <label className="donate-label">Email:</label> */}
-        <input
-          type="email"
-          name="email"
-          placeholder="Email Address"
-          className="donate-input"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
+      {submitted ? (
+        <div className="thank-you-message">
+          <h2>Thank you for your request!</h2>
+          <p>We have received your application and will contact you shortly.</p>
+        </div>
+      ) : (
+        <form className="donate-form" onSubmit={handleSubmit}>
+          {/* <label className="donate-label">Name:</label> */}
+          <input
+            placeholder="Full Name"
+            type="text"
+            name="name"
+            className="donate-input"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
 
-        {/* <label className="donate-label">Location:</label> */}
-        <textarea
-          name="location"
-          className="donate-input"
-          placeholder="Location"
-          value={formData.location}
-          onChange={handleChange}
-          required
-        ></textarea>
+          {/* <label className="donate-label">Email:</label> */}
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            className="donate-input"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
 
-        {/* <label className="donate-label">Items:</label> */}
-        <textarea
-          name="items"
-          placeholder="Items"
-          className="donate-input"
-          value={formData.items}
-          onChange={handleChange}
-          required
-        ></textarea>
+          {/* <label className="donate-label">Location:</label> */}
+          <textarea
+            name="location"
+            className="donate-input"
+            placeholder="Location"
+            value={formData.location}
+            onChange={handleChange}
+            required
+          ></textarea>
 
-        <button type="submit" className="donate-button">
-          Donate
-        </button>
-      </form>
+          {/* <label className="donate-label">Items:</label> */}
+          <textarea
+            name="items"
+            placeholder="Items"
+            className="donate-input"
+            value={formData.items}
+            onChange={handleChange}
+            required
+          ></textarea>
+
+          <button type="submit" className="donate-button">
+            Donate
+          </button>
+        </form>
+      )}
     </div>
   );
 };

@@ -23,6 +23,9 @@ const Header = () => {
             <Link to="/donate">Donate</Link>
           </li>
           <li>
+            <Link to="/request">Request</Link>
+          </li>
+          <li>
             <Link to="/about">About</Link>
           </li>
           <li>
