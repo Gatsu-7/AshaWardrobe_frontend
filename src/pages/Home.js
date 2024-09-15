@@ -12,6 +12,7 @@ import donate from "../assets/donate.png";
 import support from "../assets/support.png";
 import volunteer from "../assets/volunteer.png";
 import PartnerOrganizations from "./Partners";
+import WhyDonate from "./whydonate";
 
 const Home = () => {
   return (
@@ -24,6 +25,10 @@ const Home = () => {
         <Link to="/donate" className="hero-button">
           Donate Now
         </Link>
+      </section>
+
+      <section>
+        <WhyDonate />
       </section>
 
       <section className="features-section">

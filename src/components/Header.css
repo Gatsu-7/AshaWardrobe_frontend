@@ -1,4 +1,4 @@
-.header {
+/* .header {
   background-color: #f8f9fa;
   padding: 10px 20px;
   display: flex;
@@ -34,5 +34,118 @@
   }
   .header nav ul li a {
     font-size: small;
+  }
+} */
+
+/* Base styles for the header */
+/* Base styles for the header */
+.header {
+  background-color: #f8f9fa;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Align items horizontally on larger screens */
+  position: relative;
+}
+
+.header-title {
+  margin: 0;
+  cursor: pointer;
+  font-size: 1.8em;
+  color: #333;
+}
+
+.menu-toggle {
+  display: none; /* Hide toggle button by default */
+  font-size: 1.8em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  margin-left: 20px;
+}
+
+/* Styles for the navigation menu */
+.nav {
+  display: flex; /* Display menu horizontally by default */
+  align-items: center;
+  width: auto;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav ul li {
+  margin: 0 10px;
+}
+
+.nav ul li a {
+  font-size: larger;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+  color: #007bff;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: flex-start;
+  }
+
+  .header-title {
+    margin-bottom: 10px;
+    margin: auto;
+  }
+
+  .menu-toggle {
+    display: block; /* Show toggle button on small screens */
+    margin: auto;
+    margin-bottom: 10px;
+  }
+
+  .nav {
+    display: none; /* Hide menu by default on small screens */
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav.nav-open {
+    display: flex; /* Show menu when open */
+  }
+
+  .nav ul {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav ul li {
+    margin: 10px 0;
+  }
+
+  .nav ul li a {
+    font-size: 1.2em;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header-title {
+    font-size: 1.5em;
+  }
+
+  .nav ul li a {
+    font-size: 1em;
   }
 }

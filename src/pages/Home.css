@@ -9,11 +9,16 @@ body {
 
 /* Hero Section */
 .hero-section {
-  background: linear-gradient(to right, #ff6f61, #de6161);
+  background-image: url("https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/sites/1/2015/12/soundofhope.jpg"),
+    url("https://en-media.thebetterindia.com/uploads/2024/02/donate-to-ngos-3-1707998849.jpg");
+  background-repeat: no-repeat;
+  background-position: left center, right center;
+  background-size: 50% 100%, 50% 100%; /* Each image will take 50% of the width and cover the height */
   color: #fff;
   padding: 100px 20px;
   text-align: center;
   position: relative;
+  /* background: linear-gradient(to right, #ff6f61, #de6161); */
 }
 
 .hero-section h1 {
@@ -141,6 +146,11 @@ body {
   margin-bottom: 2rem;
 }
 @media screen and (max-width: 400px) {
+  .hero-section {
+    background-image: url("https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/sites/1/2015/12/soundofhope.jpg");
+    background-size: cover;
+    background-position: center;
+  }
   .hero-section h1 {
     font-size: 2.8em;
   }
