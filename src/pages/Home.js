@@ -17,7 +17,7 @@ import BlogSection from "./Blogssection";
 
 const Home = () => {
   return (
-    <div>
+    <div className="home-div">
       <section className="hero-section">
         <h1>Welcome to AshaWardrobe</h1>
         <p>
@@ -33,32 +33,39 @@ const Home = () => {
       </section>
 
       <section className="features-section">
-        <div className="feature-item">
-          <h2>Sustainable Impact</h2>
-          <p>Reduce clothing waste and promote sustainable fashion.</p>
-          <img src={sustain} alt="" className="image-" />
+        <div>
+          <h1 className="features-section-title">Why Donate With Us?</h1>
         </div>
-        <div className="feature-item">
-          <h2>Easy Donations</h2>
-          <p>Simple and straightforward process to donate clothes.</p>
-          <img src={donate} alt="" className="image-" />
-        </div>
-        <div className="feature-item">
-          <h2>Communities</h2>
-          <p>Your donations reach those in need and make a real difference.</p>
-          <img src={support} alt="" className="image-" />
-        </div>
-        <div className="feature-item">
-          <h2>Opportunities</h2>
-          <p>
-            Join our team to help sort and distribute donations to those in
-            need.
-          </p>
-          <img
-            src={volunteer}
-            alt="Volunteer Opportunities"
-            className="image-"
-          />
+        <div className="features-section">
+          <div className="feature-item">
+            <h2>Sustainable Impact</h2>
+            <p>Reduce clothing waste and promote sustainable fashion.</p>
+            <img src={sustain} alt="" className="image-" />
+          </div>
+          <div className="feature-item">
+            <h2>Easy Donations</h2>
+            <p>Simple and straightforward process to donate clothes.</p>
+            <img src={donate} alt="" className="image-" />
+          </div>
+          <div className="feature-item">
+            <h2>Communities</h2>
+            <p>
+              Your donations reach those in need and make a real difference.
+            </p>
+            <img src={support} alt="" className="image-" />
+          </div>
+          <div className="feature-item">
+            <h2>Opportunities</h2>
+            <p>
+              Join our team to help sort and distribute donations to those in
+              need.
+            </p>
+            <img
+              src={volunteer}
+              alt="Volunteer Opportunities"
+              className="image-"
+            />
+          </div>
         </div>
       </section>
 

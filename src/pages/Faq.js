@@ -70,7 +70,7 @@ const FAQ = () => {
         className="scale-img"
         style={{
           position: "absolute",
-          bottom: "-689%",
+          bottom: "-705%",
           right: "50px",
           height: "200px",
           width: "200px",

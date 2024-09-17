@@ -6,7 +6,9 @@ body {
   box-sizing: border-box;
   color: #333;
 }
-
+.home-div {
+  background-color: #00aaf0;
+}
 /* Hero Section */
 .hero-section {
   background-image: url("https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/sites/1/2015/12/soundofhope.jpg"),
@@ -56,9 +58,13 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 50px 20px;
-  background-color: #f9f9f9;
+  /* background-color: #f9f9f9; */
+  background-color: #fcb73e;
 }
-
+.features-section-title {
+  font-size: 3em;
+  text-align: center;
+}
 .feature-item {
   object-fit: cover;
   flex: 1;

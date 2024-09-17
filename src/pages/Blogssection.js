@@ -42,7 +42,7 @@ const BlogSection = () => {
         className="scale-img"
         style={{
           position: "absolute",
-          bottom: "-615%",
+          bottom: "-634%",
           right: "5px",
           height: "170px",
           width: "170px",
