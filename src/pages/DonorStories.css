@@ -1,0 +1,81 @@
+.blog-post {
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 5rem;
+}
+.blog-post-title {
+  /* background-image: url("https://mombian.com/images/my_donor_story_videos.jpg"); */
+  height: 470px;
+  /* background-position: bottom; */
+}
+.blog-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  /* color: #333; */
+  color: white;
+}
+
+.blog-intro {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  /* color: #474747; */
+  color: white;
+}
+
+.stories-container {
+  max-width: 900px;
+  margin: auto;
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 20px;
+}
+
+.story-card {
+  margin-top: 2rem;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.story-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.story-card h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.story-card p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.story-img {
+  width: auto;
+  height: 400px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .blog-title {
+    color: black;
+  }
+  .stories-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .stories-container {
+    grid-template-columns: 1fr;
+  }
+}

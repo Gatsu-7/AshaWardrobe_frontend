@@ -34,7 +34,7 @@ const blogs = [
 
 const BlogSection = () => {
   return (
-    <section className="blog-section">
+    <section className="blog-section-">
       <h2>Blogs</h2>
       <img
         src={blog}
@@ -50,7 +50,7 @@ const BlogSection = () => {
       />
       <div className="blog-grid">
         {blogs.map((blog) => (
-          <div key={blog.id} className="blog-card">
+          <div key={blog.id} className="blog-card-">
             <h3>{blog.title}</h3>
             <p className="blog-meta">
               By {blog.author} on {blog.date}
@@ -63,7 +63,7 @@ const BlogSection = () => {
         ))}
       </div>
       <div>
-        <Link to="/" className="view-more">
+        <Link to="/blog" className="view-more">
           View More
         </Link>
       </div>
