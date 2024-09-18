@@ -71,6 +71,11 @@ const Header = () => {
             </Link>
           </li>
           <li>
+            <Link to="/events-and-drives" onClick={() => setIsMenuOpen(false)}>
+              Events & Drives
+            </Link>
+          </li>
+          <li>
             <Link to="/donate" onClick={() => setIsMenuOpen(false)}>
               Donate
             </Link>

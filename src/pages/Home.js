@@ -34,7 +34,7 @@ const Home = () => {
 
       <section className="features-section">
         <div>
-          <h1 className="features-section-title">Why Donate With Us?</h1>
+          <h1 className="features-section-title">Why Donate Thorugh Us?</h1>
         </div>
         <div className="features-section">
           <div className="feature-item">
@@ -99,9 +99,9 @@ const Home = () => {
         <FAQ />
       </section>
 
-      <section>
+      {/* <section>
         <Footer />
-      </section>
+      </section> */}
     </div>
   );
 };

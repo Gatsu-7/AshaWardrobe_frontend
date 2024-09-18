@@ -1,5 +1,5 @@
 .blog-section- {
-  max-width: 1300px;
+  /* max-width: 1300px; */
   height: auto;
   background-color: #ff6f61;
   border-radius: 10px;
@@ -10,14 +10,14 @@
 }
 
 .blog-section- h2 {
-  font-size: 2.5em;
+  font-size: 3em;
   margin-bottom: 40px;
   color: white;
 }
 
 .view-more {
   text-decoration: none;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 
   padding: 1rem 1rem;
   background-color: #007bff;
@@ -57,7 +57,7 @@
 }
 
 .blog-meta {
-  font-size: 0.9em;
+  font-size: 1.2em;
   color: #777;
   margin-bottom: 20px;
 }

@@ -7,7 +7,7 @@ body {
   color: #333;
 }
 .home-div {
-  background-color: #00aaf0;
+  /* background-color: #00aaf0; */
 }
 /* Hero Section */
 .hero-section {
@@ -20,6 +20,7 @@ body {
   padding: 100px 20px;
   text-align: center;
   position: relative;
+  border-radius: 10px;
   /* background: linear-gradient(to right, #ff6f61, #de6161); */
 }
 
@@ -54,6 +55,7 @@ body {
 
 /* Features Section */
 .features-section {
+  border-radius: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -64,6 +66,7 @@ body {
 .features-section-title {
   font-size: 3em;
   text-align: center;
+  border-bottom: 3px solid #f56c61;
 }
 .feature-item {
   object-fit: cover;
@@ -133,10 +136,6 @@ body {
 .footer p {
   margin: 0;
   font-size: 0.9em;
-}
-
-.faq {
-  height: 30rem;
 }
 
 .impact {
