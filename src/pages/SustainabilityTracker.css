@@ -1,0 +1,84 @@
+.sustainability-tracker {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.title-div {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10rem;
+}
+.img-tit {
+  width: 125px;
+  height: 125px;
+  transition: transform ease 0.3s;
+}
+.img-tit:hover {
+  transform: scale(1.05);
+}
+.sustainability-tracker h2 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 20px;
+  /* text-align: center; */
+}
+.sustainability-tracker p {
+  font-size: 1.5em;
+}
+.tracker-statistics {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.stat-item h3 {
+  font-size: 2.8rem;
+  color: #007bff;
+}
+
+.stat-item p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.progress-bars {
+  margin-top: 20px;
+}
+
+.progress-bar {
+  margin-bottom: 20px;
+}
+
+.progress-bar label {
+  display: block;
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.progress {
+  width: 100%;
+  background-color: #ddd;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background-color: #28a745;
+  height: 100%;
+  transition: width 0.3s ease;
+}
+@media screen and (max-width: 600px) {
+  .img-tit {
+    display: none;
+  }
+  .stat-item h3 {
+    font-size: 2em;
+  }
+}

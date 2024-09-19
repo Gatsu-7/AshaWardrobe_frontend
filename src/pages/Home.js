@@ -14,6 +14,7 @@ import volunteer from "../assets/volunteer.png";
 import PartnerOrganizations from "./Partners";
 import WhyDonate from "./whydonate";
 import BlogSection from "./Blogssection";
+import SustainabilityTracker from "./sustain";
 
 const Home = () => {
   return (
@@ -83,6 +84,9 @@ const Home = () => {
 
       <section className="impact">
         <ImpactStatistics />
+      </section>
+      <section>
+        <SustainabilityTracker />
       </section>
       <section>
         <PartnerOrganizations />

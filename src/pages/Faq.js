@@ -63,19 +63,29 @@ const FAQ = () => {
 
   return (
     <div className="faq-section">
-      <h2 className="faq-title">Frequently Asked Questions</h2>
-      <img
-        src={faq}
-        alt=""
-        className="scale-img"
+      <div
         style={{
-          position: "absolute",
-          bottom: "-705%",
-          right: "50px",
-          height: "200px",
-          width: "200px",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          gap: "1rem",
         }}
-      />
+      >
+        <h2 className="faq-title">Frequently Asked Questions</h2>
+        <img
+          src={faq}
+          alt=""
+          className="scale-img"
+          style={{
+            // position: "absolute",
+            // bottom: "-705%",
+            // right: "50px",
+            height: "70px",
+            width: "70px",
+          }}
+        />
+      </div>
+
       <div className="faq-list">
         {faqs.map((faq, index) => (
           <div

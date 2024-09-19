@@ -35,19 +35,29 @@ const blogs = [
 const BlogSection = () => {
   return (
     <section className="blog-section-">
-      <h2>Blogs</h2>
-      <img
-        src={blog}
-        alt=""
-        className="scale-img"
+      <div
         style={{
-          position: "absolute",
-          bottom: "-634%",
-          right: "5px",
-          height: "170px",
-          width: "170px",
+          display: "flex",
+          justifyContent: "center",
+          // alignItems: "center",
+          gap: "1rem",
         }}
-      />
+      >
+        <h2 style={{ textAlign: "center" }}>Blogs</h2>
+        <img
+          src={blog}
+          alt=""
+          className="img-tit"
+          style={{
+            // position: "absolute",
+            // bottom: "0",
+            // right: "5px",
+            height: "50px",
+            width: "50px",
+          }}
+        />
+      </div>
+
       <div className="blog-grid">
         {blogs.map((blog) => (
           <div key={blog.id} className="blog-card-">
