@@ -17,6 +17,7 @@ import BlogRoute from "./pages/BlogRoute";
 import DonorStories from "./pages/Donorstories";
 import EventsDrives from "./pages/Events";
 import ScrollToTop from "./components/Scrolltotop";
+import ClothingReuseIdeas from "./pages/clothingReuse";
 const App = () => (
   <Router>
     <ScrollToTop />
@@ -24,6 +25,8 @@ const App = () => (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/donate" element={<DonationGuidelines />} />
+      <Route path="/ideas" element={<ClothingReuseIdeas />} />
+
       <Route path="/request" element={<RequestAssistance />} />
       <Route path="/events-and-drives" element={<EventsDrives />} />
       <Route path="/about" element={<About />} />

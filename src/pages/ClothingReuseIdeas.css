@@ -1,0 +1,54 @@
+.reuse-ideas-container {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.reuse-ideas-container h1 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+.reuse-ideas-container p {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.reuse-ideas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.idea-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.idea-item:hover {
+  transform: scale(1.05);
+}
+
+.idea-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.idea-item h2 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.idea-item p {
+  font-size: 1em;
+  color: #666;
+}
