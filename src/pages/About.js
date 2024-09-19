@@ -2,7 +2,7 @@ import React from "react";
 import "./About.css";
 import values from "../assets/values.png";
 import values1 from "../assets/values1.png";
-
+import me from "../assets/me.jpg";
 const AboutUs = () => {
   return (
     <div className="about-us-section">
@@ -95,23 +95,19 @@ const AboutUs = () => {
           <h2 className="section-title">Meet Our Team</h2>
           <div className="team-members">
             <div className="team-member">
-              <img
-                src="/images/team-member1.jpg"
-                alt="John Doe"
-                className="team-photo"
-              />
-              <h3 className="team-name">John Doe</h3>
+              <img src={me} alt="Satyam Satpathy" className="team-photo" />
+              <h3 className="team-name">Satyam Satpathy</h3>
               <p className="team-role">Founder & CEO</p>
               <p className="team-bio">
-                John is the visionary behind our organization, with a background
-                in nonprofit management and community service. His dedication to
-                social change drives our mission forward, and his leadership
-                inspires our team to strive for excellence every day.
+                Satyam is the visionary behind our organization, with a
+                background in nonprofit management and community service. His
+                dedication to social change drives our mission forward, and his
+                leadership inspires our team to strive for excellence every day.
               </p>
             </div>
             <div className="team-member">
               <img
-                src="/images/team-member2.jpg"
+                src="https://img.freepik.com/free-photo/smiley-businesswoman-posing-city-with-arms-crossed_23-2148767033.jpg?t=st=1726724801~exp=1726728401~hmac=07156ceaee87755962d07e9ac1cced2a54c85514ffb7a0c74d871d9bb2b98758&w=740"
                 alt="Jane Smith"
                 className="team-photo"
               />
@@ -126,7 +122,7 @@ const AboutUs = () => {
             </div>
             <div className="team-member">
               <img
-                src="/images/team-member3.jpg"
+                src="https://img.freepik.com/free-photo/handsome-man-presenting-something_1368-87.jpg?t=st=1726724870~exp=1726728470~hmac=631b137a369c9ec8d6eab1131635dae393ac362d2aaebf78af82a4bd9df6b52a&w=740"
                 alt="Michael Lee"
                 className="team-photo"
               />

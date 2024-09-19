@@ -4,6 +4,7 @@ import Donate from "./Donate";
 import accept from "../assets/accepted.png";
 import notaccept from "../assets/notaccept.png";
 import prepare from "../assets/prepare.png";
+import InteractiveDonationMap from "../components/Interactivedonation";
 
 const DonationGuidelines = () => {
   return (
@@ -87,6 +88,17 @@ const DonationGuidelines = () => {
             </div>
             <div className="img-div">
               <img src={prepare} alt="" className="img" />
+            </div>
+          </div>
+        </section>
+        <section>
+          <div className="map">
+            <div>
+              <h1 className="map-title">Donate and Make a Difference</h1>
+              <p className="map-description">
+                See how your donations are helping people across the country.
+              </p>
+              <InteractiveDonationMap />
             </div>
           </div>
         </section>

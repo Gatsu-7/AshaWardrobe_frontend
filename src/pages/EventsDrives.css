@@ -28,6 +28,12 @@
   flex-direction: column;
   gap: 30px;
 }
+.event-img {
+  transition: transform ease 0.3s;
+}
+.event-img:hover {
+  transform: scale(1.05);
+}
 
 .event-item {
   /* background-color: white; */
@@ -62,7 +68,8 @@
   }
 
   .event-title {
-    font-size: 1.5em;
+    text-align: center;
+    font-size: 1.2em;
   }
   .title-dive {
     img {

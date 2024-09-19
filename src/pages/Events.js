@@ -79,6 +79,7 @@ const EventsDrives = () => {
           height={"200px"}
           width={"200px"}
           style={{ borderRadius: "60px" }}
+          className="event-img"
         />
       </div>
 
