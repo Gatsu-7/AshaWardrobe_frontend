@@ -2,15 +2,17 @@
   padding: 50px 20px;
   text-align: center;
   background-color: #f9f9f9;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .reuse-ideas-container h1 {
-  font-size: 2.5em;
+  font-size: 3.5em;
   color: #333;
 }
 
 .reuse-ideas-container p {
-  font-size: 1.2em;
+  font-size: 1.5em;
   color: #555;
   margin-bottom: 40px;
 }
