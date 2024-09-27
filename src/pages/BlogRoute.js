@@ -55,7 +55,7 @@ const BlogRoute = () => {
         "Explore the negative effects of fast fashion and how clothing donations can mitigate environmental damage.",
       link: "/blog/environmental-impact-fast-fashion",
       imgSrc:
-        "https://www.ifaparis.com/wp-content/uploads/2024/04/Fast-fashion-impact-on-the-environement.jpg",
+        "https://static.independent.co.uk/2022/02/18/10/iStock-1220935757.jpg",
     },
     {
       title: "How Clothing Donations Benefit Local Communities",

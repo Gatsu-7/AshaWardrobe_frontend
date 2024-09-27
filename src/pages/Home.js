@@ -15,6 +15,7 @@ import PartnerOrganizations from "./Partners";
 import WhyDonate from "./whydonate";
 import BlogSection from "./Blogssection";
 import SustainabilityTracker from "./sustain";
+import Forum from "./Forum";
 
 const Home = () => {
   return (
@@ -98,6 +99,9 @@ const Home = () => {
       <section>
         <BlogSection />
       </section>
+      {/* <section>
+        <Forum />
+      </section> */}
 
       <section className="faq">
         <FAQ />

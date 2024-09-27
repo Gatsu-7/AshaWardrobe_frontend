@@ -90,7 +90,7 @@ const ClothingReuseIdeas = () => {
       <div className="reuse-ideas-grid">
         {reuseIdeas.map((idea, index) => (
           <div key={index} className="idea-item">
-            <img src={idea.image} alt={idea.title} className="idea-image" />
+            {/* <img src={idea.image} alt={idea.title} className="idea-image" /> */}
             <h2>{idea.title}</h2>
             <p>{idea.description}</p>
           </div>
